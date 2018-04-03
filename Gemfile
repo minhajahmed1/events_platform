@@ -32,6 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.4', '>= 4.4.2'
+gem 'geocoder', '~> 1.4', '>= 1.4.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'cancancan', '~> 2.1', '>= 2.1.3'
