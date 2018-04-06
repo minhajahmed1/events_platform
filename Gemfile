@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.4', '>= 4.4.2'
 gem 'geocoder', '~> 1.4', '>= 1.4.7'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'cancancan', '~> 2.1', '>= 2.1.3'

@@ -71,4 +71,7 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:date, :user_id, :description)
     end
+    load_and_authorize_resource
+
+
 end
