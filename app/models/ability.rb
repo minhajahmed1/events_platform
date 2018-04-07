@@ -11,12 +11,15 @@ class Ability
     end
     if user.event_creator_role?
       can :read, :all
-      can :manage, Article, :user_id => user.id
+      can :manage, Post, :user_id => user.id
+      can :create, Post
+      can :edit, Post
 
 
     else
       can :read,  :all
-      
+      can :create, Post
+
     end
     
      
