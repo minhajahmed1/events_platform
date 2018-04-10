@@ -15,10 +15,16 @@
     <%= form.label :date %>
     <%= form.datetime_select :date, id: :post_date %>
   </div>
+  
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_area :name, id: :post_name %>
+  </div>
 
   <div class="field">
     <%= form.label :user_id %>
-    <%= form.number_field :user_id, id: :post_user_id %>
+    <%= form.number_field :user_id, id: :post_user_id, value: current_user.id %>
+   
   </div>
 
   <div class="field">

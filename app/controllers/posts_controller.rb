@@ -19,6 +19,9 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+   unless current_user == @post.user
+    redirect_back fallback_location: root_path, notice: 'User is not owner'
+   end
   end
 
   # POST /posts
