@@ -1,9 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+
 <p>
   <strong>Date:</strong>
   <%= @post.date %>
 </p>
+<p>where:<%=@post.longitude %>, <%=@post.latitude%></p>
 
 <p>
     <strong>Name:</strong>
@@ -11,9 +13,10 @@
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong>User_id:</strong>
   <%= @post.user_id %>
 </p>
+
 
 <p>
   <strong>Description:</strong>
@@ -24,3 +27,5 @@
  <%= link_to 'Edit', edit_post_path(@post) %> |
 <%end%>
  <%= link_to 'Back', posts_path %>
+
+ <%= link_to "sign up", posts_url, class:"btn btn-primary" %> 
