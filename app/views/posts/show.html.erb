@@ -5,7 +5,6 @@
   <strong>Date:</strong>
   <%= @post.date %>
 </p>
-<p>where:<%=@post.longitude %>, <%=@post.latitude%></p>
 
 <p>
     <strong>Name:</strong>
@@ -30,3 +29,11 @@
 
 <%= button_to "Rsvp now", rsvp_post_path(@post), class: "btn btn-primary" %>
 
+
+
+
+
+<p>Address: <%= @post.address %></p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@post.latitude},#{@post.longitude}&markers=#{@post.latitude},#{@post.longitude}&zoom=7&size=640x400&key=AIzaSyCKzKMEhSNgwSXf7WV71pHWgzdpMkPn8W4",
+class: 'img-fluid img-rounded', alt: "#{@post} on the map"%>
