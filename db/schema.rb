@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180411233741) do
+ActiveRecord::Schema.define(version: 20180413094453) do
 
   create_table "posts", force: :cascade do |t|
     t.datetime "date"
@@ -22,6 +22,16 @@ ActiveRecord::Schema.define(version: 20180411233741) do
     t.float "latitude"
     t.float "longitude"
     t.string "address"
+  end
+
+  create_table "rsvps", force: :cascade do |t|
+    t.boolean "attending"
+    t.integer "user_id"
+    t.integer "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_rsvps_on_post_id"
+    t.index ["user_id"], name: "index_rsvps_on_user_id"
   end
 
 # Could not dump table "users" because of following StandardError
