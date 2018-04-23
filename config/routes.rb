@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get 'home/ruby_meetup'
   
   resources :posts do
-  post 'rsvp', on: :member
-  end
+  post 'rsvps', to: 'rsvps#create', on: :member
+end
 
   
 

@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20180413094453) do
   end
 
   create_table "rsvps", force: :cascade do |t|
-    t.boolean "attending"
     t.integer "user_id"
     t.integer "post_id"
     t.datetime "created_at", null: false
