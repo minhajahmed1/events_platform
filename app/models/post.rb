@@ -9,6 +9,9 @@ after_validation :reverse_geocode
   has_many :rsvps
   has_many :users, through: :rsvps
   
+  validates :name, presence: true
+
+  
   
 
 

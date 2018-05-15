@@ -7,6 +7,10 @@ class User < ApplicationRecord
          
           has_many :rsvps
           has_many :posts, through: :rsvps
+          
+          validates :email, presence: true
+
+          
   
  
 
