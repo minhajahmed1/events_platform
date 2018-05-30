@@ -1,7 +1,7 @@
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">log in</h3>
+    <h3 class="panel-title">Login</h3>
   </div>
   <div class="panel-body">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -23,7 +23,7 @@
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", :style =>"background-color: #4a90e2; border-radius: 2px; width:10rem;border:none;color:white;" %>
   </div>
 <% end %>
 

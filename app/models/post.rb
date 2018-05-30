@@ -10,6 +10,7 @@ after_validation :reverse_geocode
   has_many :users, through: :rsvps
   
   validates :name, presence: true
+  validates :user_id, presence: true
 
   
   

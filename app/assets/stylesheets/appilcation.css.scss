@@ -1,5 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+$button-color: #4a90e2;
+
+
+a:hover {
+    text-decoration:none !important;
+    
+
+}
+
+
 #center {
      color: black;
      text-align: center;
@@ -21,14 +32,29 @@
     background-image: asset-url('people.jpg');
     margin-top: -50px;
     margin-bottom: 30px;
-
-   
-  
 }
+
+.btn:hover, .btn:focus, .btn.focus {
+    background-color: #4a90e2;
+}
+
+
+
 
 .btn-lg{
     font-size: 22px;
-    background-color: red;
+    background-color: #4a90e2;
+    color: white;
+    border:none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+    
+}
+
+.btn-lg:visited{
+    font-size: 22px;
+    background-color: #4a90e2;
+    color: white;
+    
 }
 
 .navbar-fixed-bottom {
@@ -44,6 +70,7 @@
 .jumbotron{
     margin-bottom: 70px;
     text-align: center;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.29);
 }
 
 
@@ -75,4 +102,36 @@
 
 .rsvp{
     margin-top: 25px;
+}
+
+.loginLogout {
+    
+    color:white;
+    
+}
+
+.navbar-brand {
+    color:white;
+}
+
+#ruby-h1 {
+    font-size:34px;
+}
+
+
+.navbar-brand{
+    color:black !important;
+}
+
+.navbar-inverse {
+        background-color: transparent !important;
+        border: none !important;
+}
+
+.navbar-fixed-bottom {
+    color:black !important;
+}
+
+.sharedLinks {
+    background-color:transparent !important;
 }
