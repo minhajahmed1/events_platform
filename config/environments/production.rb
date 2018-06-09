@@ -85,7 +85,6 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
-server '35.182.13.205', user: 'deploy', roles: %w{web app db}
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
