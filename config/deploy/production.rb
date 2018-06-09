@@ -58,5 +58,9 @@
 #     forward_agent: false,
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
+<<<<<<< HEAD
 server '35.182.13.205', user: 'deploy', roles: %w{web app db}
+=======
+server '52.32.208.85', user: 'deploy', roles: %w{web app db}
+>>>>>>> a5b868829fda585321efff588d3eb4085ef97706
 

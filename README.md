@@ -1,24 +1,9 @@
-# README
+A web application that lets you sign up and Sign in.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Lets you create or RSVP for an event.
 
-Things you may want to cover:
+Has a map of the location of your event.
 
-* Ruby version
+Has an Admin users that has access too everyones events and also has the authority to delete other user's accounts.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Technologies used: Html5, CSS3, Ruby, Ruby on Rails, SQL, Bootstrap.
