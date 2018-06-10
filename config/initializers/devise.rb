@@ -8,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '0548ce788216b6a997cd04d422e601601a5f2cb73fd9e025f13223e68f90206b20342e494845b0fe27c54643d47a07ad01fc07f44bfa9951f7da0f1990cca90d'
+  config.secret_key = '0548ce788216b6a997cd04d422e601601a5f2cb73fd9e025f13223e68f90206b20342e494845b0fe27c54643d47a07ad01fc07f44bfa9951f7da0f1990cca90d'
   
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -252,8 +252,7 @@ Devise.setup do |config|
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
-  config.secret_key = ENV['4dd5924b7230708e5bc865cded2e1598c62865eefd12994aa3f4d2627af5da2a37e44f9038403e9ac406ff7cd1ee0a4d54529262dc7976232ed4c8e906e7cab7
-'] if Rails.env.production?
+ # config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
 
 
   # ==> OmniAuth
