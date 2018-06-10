@@ -58,7 +58,7 @@
 #     forward_agent: false,
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
-server '35.182.13.205', user: 'deploy', roles: %w{web app db}
+server '35.183.101.3', user: 'deploy', roles: %w{web app db}
 
 
 
