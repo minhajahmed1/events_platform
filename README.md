@@ -6,4 +6,6 @@ Has a map of the location of your event.
 
 Has an Admin users that has access too everyones events and also has the authority to delete other user's accounts.
 
-Technologies used: Html5, CSS3, Ruby, Ruby on Rails, SQL, Bootstrap.
+Technologies used: Html5, CSS3, Ruby, Ruby on Rails, SQL, Bootstrap, AWS.
+
+Now hosted on AWS http://eventsplatform.website/
